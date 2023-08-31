@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eos: Web Components</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:light)"
+      href="./src/themes/light.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:dark)"
+      href="./src/themes/dark.css"
+      onload="document.documentElement.classList.add('eos-theme--dark');"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+      <header>
+        <h1>Eos: Web Components</h1>
+      </header>
+
+      <code-preview></code-preview>
+  </body>
+</html>

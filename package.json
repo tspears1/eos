@@ -1,0 +1,25 @@
+{
+  "name": "eos",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/eos.js"
+    }
+  },
+  "dependencies": {
+    "lit": "^2.7.6",
+    "vite-plugin-babel": "^1.1.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.22.10",
+    "vite": "^4.4.5"
+  }
+}
