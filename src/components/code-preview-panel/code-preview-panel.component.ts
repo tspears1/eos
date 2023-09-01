@@ -31,6 +31,12 @@ export default class CodePreviewPanel extends LitElement {
     /** When true, the tab panel will be shown. */
     @property({ type: Boolean, reflect: true }) active = false
 
+    connectedCallback() {
+        super.connectedCallback();
+        this.id = this.id.length > 0 ? this.id : this.componentId;
+        this.setAttribute('role', 'tabpanel');
+    }
+
     @watch('active')
     handleActiveChange() {
         this.setAttribute('aria-hidden', this.active ? 'false' : 'true');

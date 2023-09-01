@@ -1,5 +1,5 @@
 import { css } from 'lit'
-import componentStyles from '../../styles/component.styles.js'
+import componentStyles from '../../styles/component.styles.ts'
 
 export default css`
     ${componentStyles}
@@ -66,18 +66,18 @@ export default css`
         }
     }
 
-    .code-preview__source {
+    .code-preview__panel {
         border: solid 1px var(--eos-color-neutral-200);
         border-bottom: none;
         border-radius: 0 !important;
         display: none;
     }
 
-    .code-preview--expanded .code-preview__source {
+    .code-preview--expanded .code-preview__panel {
         display: block;
     }
 
-    .code-preview__source pre {
+    .code-preview__panel pre {
         margin: 0;
     }
 
